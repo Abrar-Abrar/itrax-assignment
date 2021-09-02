@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(44, 44, 44);
+}
+
+li {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-us {
+    margin: 50px 0;
+}
+
+.contact-us .section-head {
+    margin-bottom: 50px;
+}
+
+.section-head .title,
+.section-head .subtitle {
+    text-align: center;
+}
+
+.section-head .title {
+    text-transform: uppercase;
+    color: #29be29;
+}
+
+.section-head .subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    width: 65%;
+    padding: 15px 0 50px;
+    margin: 0 auto 20px;
+    color: #fff;
+}
+
+.contact-us .section-body {
+    background-color: rgba(24, 24, 24, 0.658);
+    overflow: hidden;
+    padding: 7% auto;
+}
+
+.contact-us .section-body h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.contact-us .contact-form,
+.contact-us .contact-info {
+    display: inline-block;
+    padding: 0 7%;
+}
+
+.contact-us .contact-form {
+    width: 60%;
+}
+
+.contact-us .contact-info {
+    width: 39%;
+}
+
+.contact-us .contact-form input,
+.contact-us .contact-form textarea {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.contact-us .contact-form .btn {
+    border: none;
+    width: 100%;
+    padding: 4% 0;
+    background-color: #29be29;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-us .contact-info {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.contact-us .contact-info>*:not(h3) {
+    margin: 20px 0 54px;
+}
+
+.contact-us .contact-info h4 {
+    text-transform: capitalize;
+    color: #29be29;
+    margin-bottom: 20px;
+}
+
+.contact-us .contact-info p {
+    color: #969696;
+    margin-bottom: 15px;
+}
+
+.contact-us .contact-info i {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
