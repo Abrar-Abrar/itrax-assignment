@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4274b7;
+    transition: background-color 0.3s ease-in, border 0.7s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+.showcase {
+    height: 100vh;
+    background-image: url("images/main-bg.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.showcase .overlay::before {
+    content: "";
+    position: absolute!important;
+    display: block!important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #4b4b4b66;
+}
+
+.showcase .navbar {
+    border-bottom: 1px solid #ffffff33;
+    height: 90px;
+    position: relative;
+}
+
+.showcase .navbar .logo {
+    float: left;
+    width: 13%;
+    line-height: 90px;
+}
+
+.showcase .navbar .logo img {
+    line-height: 90px;
+}
+
+.showcase .navbar .menu {
+    float: right;
+}
+
+.showcase .navbar .menu li {
+    float: left;
+    line-height: 90px;
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+.center {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase #showcase-content {
+    color: #fff;
+    text-transform: capitalize;
+    width: auto;
+    margin-top: 50px;
+}
+
+.showcase #showcase-content h1 {
+    font-size: 30px;
+    font-size: 76px;
+    font-weight: 500;
+}
+
+.showcase #showcase-content p {
+    font-size: 20px;
+    margin: 25px 0;
+    line-height: 1.9;
+}
+
+button {
+    padding: 18px 28px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.showcase .div-ball {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #ffffffb3;
+    border-radius: 55px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+}
+
+.showcase .ball {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 1;
+    animation: moving 1.5s linear 1s infinite;
+    -webkit-animation: moving 1.5s linear 1s infinite;
+}
+
+#panel {
+    position: absolute;
+    right: 0px;
+    top: 20vh;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px 0 0 10px;
+    transition: right 0.3s;
+}
+
+#panel:hover {
+    right: 299px;
+}
+
+#panel #panel-choices li {
+    padding: 10px 0;
+}
+
+#panel #panel-choices li i {
+    font-size: 20px;
+    color: rgb(56, 56, 56);
+}
+
+#panel #panel-content {
+    overflow-y: scroll;
+    background: #fff;
+    position: fixed;
+    width: 300px;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 30px;
+}
+
+#panel:hover #panel-content {
+    right: 0;
+}
+
+#panel #panel-content button {
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#panel #panel-content h6 {
+    font-size: 15px;
+    margin: 30px 0;
+}
+
+#panel #panel-content button:hover {
+    background-color: rgb(61, 59, 59);
+    color: #fff;
+}
+
+#panel #panel-content .choose-color li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+#panel #panel-content .choose-color li span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+#panel #panel-content .choose-demos div {
+    float: left;
+    width: 50%;
+    padding: 0 6px 10px;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+#panel #panel-content .choose-demos div:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
+
+@keyframes moving {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        top: 25%;
+        opacity: 0.7
+    }
+    60% {
+        top: 50%;
+        opacity: 0.4
+    }
+    100% {
+        top: 70%;
+        opacity: 0;
+    }
+}
